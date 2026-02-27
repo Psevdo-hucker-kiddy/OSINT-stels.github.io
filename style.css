@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  background: #111;
+  color: #fff;
+}
+header {
+  background: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav button {
+  margin: 0 4px;
+  padding: 5px 10px;
+  background: #333;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+header nav button:hover {
+  background: #555;
+}
+.page { display: none; padding: 15px; }
+input { display: block; margin: 6px 0; padding: 5px; width: 240px; background:#222; border:1px solid #444; color:#fff; }
+button { padding:6px 12px; background:#222; border:1px solid #444; cursor:pointer; color:#fff; }
+button:hover { background:#444; }
+.card {
+  background:#222;
+  border:1px solid #555;
+  margin:10px 0;
+  padding:10px;
+}
+.mission {
+  background:#222;
+  border:1px solid #666;
+  padding:8px;
+  margin:6px 0;
+}

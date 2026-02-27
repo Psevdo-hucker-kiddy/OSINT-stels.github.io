@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stels OSINT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Stels OSINT</h1>
+  <div id="money">💰 0</div>
+  <nav>
+    <button onclick="openTab('searchPage')">Поиск</button>
+    <button onclick="openTab('missions')">Миссии</button>
+    <button onclick="openTab('market')">Магазин</button>
+    <button onclick="openTab('graphPage')">Граф</button>
+  </nav>
+</header>
+
+<div id="searchPage" class="page">
+  <h2>Поиск</h2>
+  <input id="searchInput" placeholder="ФИО, телефон, email, город..." />
+  <button onclick="search()">Найти</button>
+  <div id="results"></div>
+</div>
+
+<div id="missions" class="page"></div>
+<div id="market" class="page"></div>
+
+<div id="graphPage" class="page">
+  <h2>Граф связей</h2>
+  <canvas id="graphCanvas" width="1000" height="550" style="border:1px solid #555;"></canvas>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
